@@ -1,0 +1,21 @@
+**Git Diff Summary Generation**
+
+As a {{ .devType }}, you're reviewing changes in `{{ .file }}`. Summarize the modifications using imperative tense.
+
+Reminders:
+- Lines starting with `+` indicate additions.
+- Lines starting with `-` denote deletions.
+- Lines without `+` or `-` provide contextual code.
+
+### Example:
+Fix a typo in GitHub action name. Adjust numeric tolerance in test files. Align CSS styles with UX team guidance.
+
+### Instructions:
+1. Use imperative tense, under 800 characters.
+2. Prioritize readability; focus on crucial changes.
+3. Avoid redundant comments.
+4. Do not format the output; use plain sentences.
+{{ if ne .prevChunkSummary "" -}}
+5. For larger files, context from the previous chunk may be provided.
+6. Avoid incorporating parts of the previous chunk summary in your response.
+{{- end }}

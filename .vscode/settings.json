@@ -1,0 +1,151 @@
+{
+    "psi-header.config": {
+        "forceToTop": true,
+        "blankLinesAfter": 1
+    },
+    "psi-header.changes-tracking": {
+        "isActive": false,
+        "exclude": [
+            "markdown",
+            "json"
+        ],
+        "autoHeader": "manualSave"
+    },
+    "psi-header.lang-config": [
+        {
+            "language": "*",
+            "begin": "###",
+            "prefix": "# ",
+            "end": "###"
+        },
+        {
+            "language": "shellscript",
+            "begin": "###",
+            "prefix": "# ",
+            "end": "###",
+            "beforeHeader": [
+                "#!/bin/sh"
+            ]
+        },
+        {
+            "language": "lua",
+            "begin": "--[[",
+            "prefix": "--",
+            "end": "--]]",
+            "blankLinesAfter": 0
+        },
+        {
+            "language": "html",
+            "begin": "<!--",
+            "prefix": " == ",
+            "end": "-->",
+            "blankLinesAfter": 0,
+            "beforeHeader": [
+                "<!DOCTYPE html>"
+            ]
+        },
+        {
+            "language": "python",
+            "begin": "###",
+            "prefix": "# ",
+            "end": "###",
+            "blankLinesAfter": 0,
+            "beforeHeader": [
+                "#!/usr/bin/env python3",
+                "# -*- coding:utf-8 -*-"
+            ]
+        },
+        {
+            "language": "javascript",
+            "begin": "/**",
+            "prefix": " * ",
+            "end": " */",
+            "forceToTop": false
+        },
+        {
+            "language": "typescript",
+            "mapTo": "javascript"
+        },
+        {
+            "language": "php",
+            "mapTo": "javascript"
+        },
+        {
+            "language": "css",
+            "mapTo": "javascript"
+        },
+        {
+            "language": "scss",
+            "mapTo": "javascript"
+        },
+        {
+            "language": "less",
+            "mapTo": "javascript"
+        },
+        {
+            "language": "coffeescript",
+            "mapTo": "javascript"
+        },
+        {
+            "language": "typescriptreact",
+            "mapTo": "javascript"
+        },
+        {
+            "language": "java",
+            "mapTo": "javascript"
+        },
+        {
+            "language": "groovy",
+            "mapTo": "javascript"
+        },
+        {
+            "language": "proto3",
+            "mapTo": "javascript"
+        },
+        {
+            "language": "json",
+            "autoHeader": "off"
+        },
+        {
+            "language": "jsonc",
+            "autoHeader": "off"
+        },
+        {
+            "language": "ini",
+            "autoHeader": "off"
+        },
+        {
+            "language": "go",
+            "begin": "// ---",
+            "prefix": "// ",
+            "end": "// ---",
+            "forceToTop": false
+        }
+    ],
+    "psi-header.templates": [
+        {
+            "language": "*",
+            "template": [
+                "Copyright © <<year>> <<author>> <<<authoremail>>>",
+                "",
+                "Permission is hereby granted, free of charge, to any person obtaining a copy",
+                "of this software and associated documentation files (the \"Software\"), to deal",
+                "in the Software without restriction, including without limitation the rights",
+                "to use, copy, modify, merge, publish, distribute, sublicense, and/or sell",
+                "copies of the Software, and to permit persons to whom the Software is",
+                "furnished to do so, subject to the following conditions:",
+               "",
+                "The above copyright notice and this permission notice shall be included in",
+                "all copies or substantial portions of the Software.",
+                "",
+                "THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR",
+                "IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,",
+                "FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE",
+                "AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER",
+                "LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,",
+                "OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN",
+                "THE SOFTWARE."
+            ]
+        }
+    ],
+}

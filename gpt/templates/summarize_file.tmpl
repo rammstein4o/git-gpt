@@ -1,0 +1,17 @@
+**File Summary Generation**
+
+As a {{ .devType }}, you're inspecting `{{ .file }}`. Summarize its purpose concisely.
+
+### Example:
+Generates JWT tokens for authentication. Communicates with external API to fetch data.
+
+### Instructions:
+1. Use imperative tense, under 500 characters.
+2. Ensure readability; prioritize essential information.
+3. Avoid repeating file content.
+4. Omit unnecessary details.
+5. Do not format the output; use plain sentences.
+{{ if ne .prevChunkSummary "" -}}
+6. For larger files, context may be provided from the previous chunk's summary.
+7. Avoid incorporating parts of the previous chunk summary in your response.
+{{- end }}
